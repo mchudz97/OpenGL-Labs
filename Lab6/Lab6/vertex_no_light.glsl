@@ -1,0 +1,16 @@
+#version 330
+
+layout( location = 0 ) in vec3 inPosition;
+layout( location = 2 ) in vec2 inUV;
+
+uniform mat4 modelTransform;
+uniform mat4 matProj;
+uniform mat4 matView;
+uniform float texMov;
+out vec2 UV;
+
+void main()
+{
+	UV = vec2(inUV[0] + texMov, inUV[1]);
+	gl_Position = matProj * matView * modelTransform * vec4(inPosition, 1.0);
+}

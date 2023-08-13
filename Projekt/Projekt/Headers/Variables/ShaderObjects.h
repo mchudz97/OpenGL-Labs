@@ -1,0 +1,17 @@
+#pragma once
+Shader program;
+Shader program_instanced;
+Shader program_no_light;
+Shader program_hdr;
+Shader program_background;
+Shader program_irradiance;
+Shader program_prefilter;
+Shader program_brdf;
+Shader text_3d;
+Shader program_smoke;
+Shader program_shadow;
+Shader program_shadowDir;
+Shader program_shadowDirSmoke;
+Shader program_mapRender;
+Shader program_mapDisplay;
+Shader program_player;
